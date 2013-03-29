@@ -15,3 +15,8 @@ nodebrew use 0.10.2 > /dev/null
 PATH=$PATH:$HOME/.rvm/bin
 source /Users/fujisawa-shin/.rvm/scripts/rvm
 rvm use 2.0.0 > /dev/null
+
+# include scripts
+for file in $( ls ~/bash.conf/script/*.sh ); do
+    source $file
+done
