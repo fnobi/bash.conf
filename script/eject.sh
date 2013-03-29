@@ -1,14 +1,13 @@
 function eject () {
     if [ -z $1 ] ; then
-        echo "Error. No device name."
+        echo "Error. No device name." 1>&2
         return 1
     fi
 
     if ! [ -d /Volumes/$1 ] ; then
-        echo "Error. /Volumes/$1 does'nt exist."
+        echo "Error. /Volumes/$1 does'nt exist." 1>&2
         return
     fi
 
-    echo "eject /Volumes/$1."
     diskutil unmount /Volumes/$1
 }
