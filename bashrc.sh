@@ -13,7 +13,7 @@ nodebrew use 0.10.2 > /dev/null
 # use rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin
-source /Users/fujisawa-shin/.rvm/scripts/rvm
+source $HOME/.rvm/scripts/rvm
 rvm use 2.0.0 > /dev/null
 
 # include scripts
