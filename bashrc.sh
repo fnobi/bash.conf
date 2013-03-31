@@ -20,3 +20,9 @@ rvm use 2.0.0 > /dev/null
 for file in $( ls ~/bash.conf/script/*.sh ); do
     source $file
 done
+
+# npm completion
+source ~/.npm-completion
+
+# emacs shellenv
+source ~/bash.conf/emacs-shellenv.sh
