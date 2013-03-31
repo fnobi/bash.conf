@@ -9,7 +9,7 @@ all: ~/.bashrc ~/.bash_profile
 	ln -s $(BASH_CONF)/bashrc.sh ~/.bash_profile
 
 ~/.npm-completion:
-	npm completion > $(BASH_CONF)/.npm-completion
+	npm completion > ~/.npm-completion
 
 clean:
 	if [ -L ~/.bashrc ]; then rm ~/.bashrc ; fi
