@@ -1,5 +1,5 @@
 # extend path
-PATH="/usr/local/sbin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH"
+PATH="/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH"
 export PATH
 
 # use perlbrew
