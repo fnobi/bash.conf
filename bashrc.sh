@@ -16,6 +16,9 @@ PATH=$PATH:$HOME/.rvm/bin
 source $HOME/.rvm/scripts/rvm
 rvm use 2.0.0 > /dev/null
 
+# android sdk
+export PATH=$HOME/dev/sdk/adt-bundle-mac-x86_64-20131030/tools:$PATH
+
 # include scripts
 for file in $( ls ~/bash.conf/script/*.sh ); do
     source $file
