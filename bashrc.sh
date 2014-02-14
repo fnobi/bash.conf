@@ -16,8 +16,12 @@ PATH=$PATH:$HOME/.rvm/bin
 source $HOME/.rvm/scripts/rvm
 rvm use 2.0.0 > /dev/null
 
+# java_home
+export JAVA_HOME=`/usr/libexec/java_home`
+
 # android sdk
-export PATH=$HOME/dev/sdk/adt-bundle-mac-x86_64-20131030/tools:$PATH
+export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/tools:$PATH
+export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
 
 # include scripts
 for file in $( ls ~/bash.conf/script/*.sh ); do
