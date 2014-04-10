@@ -1,5 +1,9 @@
 # extend path
-PATH="/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH"
+PATH=$HOME/bin:$PATH
+PATH=/opt/local/sbin:$PATH
+PATH=/opt/local/bin:$PATH
+PATH=/usr/local/sbin:$PATH
+PATH=/usr/local/bin:$PATH
 export PATH
 
 # use perlbrew
@@ -12,7 +16,7 @@ nodebrew use 0.10.2 > /dev/null
 
 # use rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin
+export PATH=$PATH:$HOME/.rvm/bin
 source $HOME/.rvm/scripts/rvm
 rvm use 2.1.1 > /dev/null
 
@@ -26,7 +30,7 @@ export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
 # go path & go root
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/dev/gocode
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 # include scripts
 for file in $( ls ~/bash.conf/script/*.sh ); do
