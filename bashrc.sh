@@ -26,6 +26,7 @@ export JAVA_HOME=`/usr/libexec/java_home`
 # android sdk
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/tools:$PATH
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
+export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin:$PATH
 
 # go path & go root
 export GOROOT=/usr/local/go
