@@ -17,6 +17,7 @@ nodebrew use 0.10.2 > /dev/null
 # use rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+rbenv global 2.1.1
 
 # java_home
 export JAVA_HOME=`/usr/libexec/java_home`
