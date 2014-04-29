@@ -14,11 +14,9 @@ perlbrew use 5.14.4
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 nodebrew use 0.10.2 > /dev/null
 
-# use rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH=$PATH:$HOME/.rvm/bin
-source $HOME/.rvm/scripts/rvm
-rvm use 2.1.1 > /dev/null
+# use rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 # java_home
 export JAVA_HOME=`/usr/libexec/java_home`
