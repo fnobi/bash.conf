@@ -1,3 +1,11 @@
+# config
+bash_root=~/bash.conf
+config_file=$bash_root/config.sh
+
+if [ -f $config_file ]; then
+    source $config_file
+fi
+
 # extend path
 PATH=$HOME/bin:$PATH
 PATH=/opt/local/sbin:$PATH
@@ -36,7 +44,7 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=/Library/Haskell/bin:$PATH
 
 # include scripts
-for file in $( ls ~/bash.conf/script/*.sh ); do
+for file in $( ls $bash_root/script/*.sh ); do
     source $file
 done
 
