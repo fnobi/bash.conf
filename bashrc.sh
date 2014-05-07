@@ -41,7 +41,7 @@ export GOPATH=$HOME/dev/gocode
 export PATH=$GOPATH/bin:$PATH
 
 # haskell
-export PATH=/Library/Haskell/bin:$PATH
+export PATH=~/Library/Haskell/bin:$PATH
 
 # include scripts
 for file in $( ls $bash_root/script/*.sh ); do
