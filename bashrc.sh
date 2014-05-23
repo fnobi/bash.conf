@@ -14,13 +14,14 @@ PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
 export PATH
 
-# use perlbrew
-source ~/perl5/perlbrew/etc/bashrc
-perlbrew use 5.14.4
-
 # use nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 nodebrew use 0.10.2 > /dev/null
+
+# use plenv
+export PATH=$HOME/.plenv/bin:$PATH
+eval "$(plenv init -)"
+plenv global 5.18.2
 
 # use rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
