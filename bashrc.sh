@@ -36,6 +36,9 @@ export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/tools:$PATH
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin:$PATH
 
+# android ndk
+export PATH=$HOME/dev/android-ndk-r9d/:$PATH
+
 # go path & go root
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/dev/gocode
