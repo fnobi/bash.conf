@@ -31,12 +31,18 @@ rbenv global 2.1.1
 # java_home
 export JAVA_HOME=`/usr/libexec/java_home`
 
+# cocos2dx
+export COCOS2DX_ROOT=$HOME/dev/cocos2d-x-2.2.3/
+
 # android sdk
+export ANDROID_SDK_ROOT=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/tools:$PATH
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
 export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin:$PATH
 
 # android ndk
+export NDK_TOOLCHAIN_VERSION=4.8
+export NDK_ROOT=$HOME/dev/android-ndk-r9d
 export PATH=$HOME/dev/android-ndk-r9d/:$PATH
 
 # go path & go root
