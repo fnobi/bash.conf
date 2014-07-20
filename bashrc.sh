@@ -63,3 +63,11 @@ source ~/.npm-completion
 
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/fujisawa-shin/dev/cocos2d-x-3.2/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT=/Users/fujisawa-shin/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin
+export PATH=$ANT_ROOT:$PATH
