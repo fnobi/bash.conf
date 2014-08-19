@@ -72,6 +72,3 @@ export PATH=$ANT_ROOT:$PATH
 
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
-
-emacs ~
-exit
