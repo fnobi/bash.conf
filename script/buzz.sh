@@ -1,5 +1,6 @@
 function buzz () {
     export url=$1
+    export logfile=$(echo $url | sed -e 's/https*:\/\//./g' -e 's/\/$//g' -e 's/\//_/g')
 
     while :
     do
@@ -11,6 +12,8 @@ function buzz () {
         echo " - likes:  $likes"
         echo " - tweets: $tweets"
         date
+
+        echo $(date)",$likes,$tweets" >> ~/$logfile.csv
 
         sleep 30
     done
