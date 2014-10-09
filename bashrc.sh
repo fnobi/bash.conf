@@ -70,5 +70,8 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 export ANT_ROOT=/Users/fujisawa-shin/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin
 export PATH=$ANT_ROOT:$PATH
 
+# mod ulimit
+ulimit -n 1024
+
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
