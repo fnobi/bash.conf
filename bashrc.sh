@@ -75,3 +75,6 @@ ulimit -n 1024
 
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/fujisawa-shin/.gvm/bin/gvm-init.sh" ]] && source "/Users/fujisawa-shin/.gvm/bin/gvm-init.sh"
