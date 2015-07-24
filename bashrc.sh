@@ -16,7 +16,7 @@ export PATH
 
 # use nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-nodebrew use 0.10.26 > /dev/null
+nodebrew use io@v2.4.0 > /dev/null
 
 # use plenv
 export PATH=$HOME/.plenv/bin:$PATH
@@ -43,8 +43,8 @@ export PATH=$HOME/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin:$PATH
 
 # android ndk
 export NDK_TOOLCHAIN_VERSION=4.8
-export NDK_ROOT=$HOME/dev/android-ndk-r9d
-export PATH=$HOME/dev/android-ndk-r9d/:$PATH
+export NDK_ROOT=$HOME/dev/android-ndk-r10d
+export PATH=$HOME/dev/android-ndk-r10d/:$PATH
 
 # go path & go root
 export GOROOT=/usr/local/go
