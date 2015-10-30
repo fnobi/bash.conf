@@ -55,7 +55,7 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=~/Library/Haskell/bin:$PATH
 
 # include scripts
-for file in $( ls $bash_root/script/*.sh ); do
+for file in $( ls $bash_root/script/*.{sh,bash} ); do
     source $file
 done
 
