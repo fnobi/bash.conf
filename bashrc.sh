@@ -16,7 +16,7 @@ export PATH
 
 # use nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-nodebrew use 0.10.26 > /dev/null
+nodebrew use latest > /dev/null
 
 # use plenv
 export PATH=$HOME/.plenv/bin:$PATH
