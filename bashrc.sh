@@ -14,10 +14,6 @@ PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
 export PATH
 
-# use nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-nodebrew use latest > /dev/null
-
 # use anyenv
 if [ -d $HOME/.anyenv ] ; then
     export PATH="$HOME/.anyenv/bin:$PATH"
