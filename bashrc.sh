@@ -18,22 +18,14 @@ export PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 nodebrew use latest > /dev/null
 
-# use plenv
-export PATH=$HOME/.plenv/bin:$PATH
-eval "$(plenv init -)"
-plenv global 5.18.2
-
-# use rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
-rbenv global 2.2.3
+# use anyenv
+if [ -d $HOME/.anyenv ] ; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+    eval "$(anyenv init -)"
+fi
 
 # java_home
 export JAVA_HOME=`/usr/libexec/java_home`
-
-# cocos2dx
-# export COCOS2DX_ROOT=$HOME/dev/cocos2d-x-3.2/
-export COCOS2DX_ROOT=$HOME/dev/cocos2d-js-v3.0-rc1/
 
 # android sdk
 export ANDROID_SDK_ROOT=$HOME/dev/adt-bundle-mac-x86_64-20131030/sdk/
@@ -61,14 +53,6 @@ done
 
 # npm completion
 source ~/.npm-completion
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=$COCOS2DX_ROOT"tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable ANT_ROOT for cocos2d-x
-export ANT_ROOT=/Users/fujisawa-shin/dev/adt-bundle-mac-x86_64-20131030/apache-ant-1.9.3/bin
-export PATH=$ANT_ROOT:$PATH
 
 # Add PGDATA
 export PGDATA=/usr/local/var/postgres
