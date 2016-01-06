@@ -47,6 +47,9 @@ for file in $( ls $bash_root/script/*.{sh,bash} ); do
     source $file
 done
 
+# completion
+source /usr/local/etc/bash_completion.d/*.bash
+
 # npm completion
 source ~/.npm-completion
 
@@ -55,6 +58,9 @@ export PGDATA=/usr/local/var/postgres
 
 # mod ulimit
 ulimit -n 1024
+
+# mod pkg-config path
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
 
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
