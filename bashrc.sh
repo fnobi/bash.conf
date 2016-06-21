@@ -20,6 +20,9 @@ if [ -d $HOME/.anyenv ] ; then
     eval "$(anyenv init -)"
 fi
 
+# git diff-highlight
+export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight/
+
 # java_home
 export JAVA_HOME=`/usr/libexec/java_home`
 
