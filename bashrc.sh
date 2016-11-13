@@ -63,7 +63,7 @@ source ~/.npm-completion
 export PGDATA=/usr/local/var/postgres
 
 # mod ulimit
-ulimit -n 1024
+ulimit -n 2048
 
 # mod pkg-config path
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
