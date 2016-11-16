@@ -66,7 +66,7 @@ export PGDATA=/usr/local/var/postgres
 ulimit -n 2048
 
 # mod pkg-config path
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
 
 # emacs shellenv
 source ~/bash.conf/emacs-shellenv.sh
