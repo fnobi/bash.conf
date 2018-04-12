@@ -1,11 +1,16 @@
 function ni () {
+    if [ -z $1 ] ; then
+        args=install
+    else
+        args=$*
+    fi
     if [ -f ./yarn.lock ] ; then
-        echo "yarn.lock is found."
-        yarn install
+        echo yarn $args
+        yarn $args
         return
     elif [ -f ./package-lock.json ] ; then
-        echo "package-lock.json is found."
-        npm install
+        echo npm $args
+        npm $args
         return
     else
         echo "lock file is not found."
