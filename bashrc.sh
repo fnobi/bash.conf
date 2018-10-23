@@ -53,9 +53,6 @@ for file in $( ls $bash_root/script/*.{sh,bash} ); do
     source $file
 done
 
-# default editor
-export EDITOR=atom
-
 # completion
 source /usr/local/etc/bash_completion.d/*.bash
 
