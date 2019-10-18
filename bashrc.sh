@@ -51,6 +51,10 @@ export PATH=$HOME/.yarn/bin:$PATH
 # flutter
 export PATH=$HOME/dev/flutter/bin:$PATH
 
+# google-cloud-sdk
+# 本当は後の記述で不要なはずだが…？ :thinking:
+export PATH=$HOME/google-cloud-sdk/bin:$PATH
+
 # include scripts
 for file in $( ls $bash_root/script/*.{sh,bash} ); do
     source $file
@@ -81,7 +85,7 @@ source ~/bash.conf/emacs-shellenv.sh
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then source '~/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then . '~/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then source '~/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then . '~/google-cloud-sdk/completion.bash.inc'; fi
